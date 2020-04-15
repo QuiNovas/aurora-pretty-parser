@@ -31,8 +31,9 @@ jobs:
     - name: Build package
       run: |
         python setup.py bdist_wheel sdist
-    - name: Publish distribution to PyPI
-      if: startsWith(github.event.ref, 'refs/tags')
-      uses: pypa/gh-action-pypi-publish@master
-      with:
-        password: ${{ secrets.pypi_password }}
+    - name: Publish package
+      env:
+        TWINE_USERNAME: ${{ secrets.pypi_user }}
+        TWINE_PASSWORD: ${{ secrets.pypi_password }}
+      run: |
+        twine upload dist/*
