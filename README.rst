@@ -22,10 +22,10 @@ parseResults(records)
 
 ### Args:
 ## records
-  The records from the API query (execute_statement()["records"])
+The records from the API query (execute_statement()["records"])
 
 ## metadata
-  The column metadata from API query (execute_statement()["columnMetadata"])
+The column metadata from API query (execute_statement()["columnMetadata"])
 
 Example
 ----------------------------
