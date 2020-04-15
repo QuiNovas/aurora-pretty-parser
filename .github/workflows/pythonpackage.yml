@@ -29,7 +29,7 @@ jobs:
         pip install setuptools wheel twine
     - name: Build package
       run: |
-        python -m pip setup.py build bdist_wheel sdist
+        python setup.py build bdist_wheel sdist
     - name: Upload package
       run: |
         twine upload dist/*
