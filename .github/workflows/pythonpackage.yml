@@ -8,6 +8,8 @@ on:
     branches: [ develop ]
   pull_request:
     branches: [ master ]
+  tags:
+    - **
 
 jobs:
   build:
