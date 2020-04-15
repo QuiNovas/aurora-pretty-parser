@@ -15,17 +15,12 @@ Responses are returned formated as:
 
 Where each item in the top level array is a separate row.
 
-Usage
+Methods
 ----------------------------
 
-parseResults(records)
-
-### Args:
-## records
-The records from the API query (execute_statement()["records"])
-
-## metadata
-The column metadata from API query (execute_statement()["columnMetadata"])
+parseResults(records) -> list
+Arguments:
+records -- The records from the API query (execute_statement()["records"])
 
 Example
 ----------------------------
@@ -43,4 +38,4 @@ Example
       sql=sql
   )
 
-  print(parseResults(response)
+  print(parseResults(response))
