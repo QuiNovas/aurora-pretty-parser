@@ -29,7 +29,11 @@ jobs:
         python -m pip install --upgrade setuptools wheel twine
     - name: Build package
       run: |
+        pwd
+        ls
+        exit
         python setup.py bdist_wheel sdist
     - name: Upload package
       run: |
+        exit
         twine upload dist/*
