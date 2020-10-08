@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='aurora-prettyparser',
-    version='1.0.1',
+    version='1.0.4',
     description='Parses Aurora responses into a list dictionaries with column names as keys',
     author='Mathew Moon',
     author_email='mmoon@quinovas.com',
