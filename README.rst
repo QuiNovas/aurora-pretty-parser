@@ -2,6 +2,12 @@
 aurora_response_parser
 ============================
 
+========================================================================
+THIS PACKAGE IS NOW PART OF the appsync-tools package Use it instead
+=======================================================================
+https://github.com/QuiNovas/appsync-tools
+
+
 Parses aurora serverless API responses into a more usable format. Results are returned as a list of dictionaries with the column names being the key.
 Nulls (returned by Aurora as isNull) are returned as None types. Any value that can be parsed as json is cast from a string to a list/dictionary.
 Responses are returned formated as:
